@@ -36,7 +36,7 @@ Video files are accessed using relative paths, ensuring they're available for se
 
 ## Video Demo
 
-Watch the video demo on `./demo.mp4`
+Watch the video demo on `./demo.mp4` or `https://brown-academic-hippopotamus-388.mypinata.cloud/ipfs/QmV58uEKoWaQ2JDBHnGHHE2fipYAHEUZuRvt1K8Hqngrxb`
 
 ## Installation and Setup Instructions
 1. Clone the Repository
