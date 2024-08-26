@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Who is Real Madrid's all-time top goal scorer?",
+        "options": [
+            "Cristiano Ronaldo",
+            "Raúl",
+            "Karim Benzema",
+            "Alfredo Di Stéfano"
+        ],
+        "answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "In which year was Real Madrid founded?",
+        "options": [
+            "1902",
+            "1899",
+            "1910",
+            "1923"
+        ],
+        "answer": "1902"
+    },
+    {
+        "question": "Which stadium is home to Real Madrid?",
+        "options": [
+            "Camp Nou",
+            "Wanda Metropolitano",
+            "Santiago Bernabéu",
+            "Old Trafford"
+        ],
+        "answer": "Santiago Bernabéu"
+    },
+    {
+        "question": "How many UEFA Champions League titles has Real Madrid won?",
+        "options": [
+            "9",
+            "11",
+            "13",
+            "14"
+        ],
+        "answer": "14"
+    },
+    {
+        "question": "Which player is known as 'The Captain' for Real Madrid?",
+        "options": [
+            "Raúl",
+            "Sergio Ramos",
+            "Iker Casillas",
+            "Fernando Hierro"
+        ],
+        "answer": "Sergio Ramos"
+    },
+    {
+        "question": "Who is the current head coach of Real Madrid as of 2024?",
+        "options": [
+            "Zinedine Zidane",
+            "Carlo Ancelotti",
+            "Julen Lopetegui",
+            "José Mourinho"
+        ],
+        "answer": "Carlo Ancelotti"
+    },
+    {
+        "question": "Which legendary player was known as 'The Blond Arrow'?",
+        "options": [
+            "Raúl",
+            "Alfredo Di Stéfano",
+            "Cristiano Ronaldo",
+            "Karim Benzema"
+        ],
+        "answer": "Alfredo Di Stéfano"
+    },
+    {
+        "question": "What is the nickname of Real Madrid?",
+        "options": [
+            "Los Rojiblancos",
+            "Los Blancos",
+            "Los Merengues",
+            "Los Culés"
+        ],
+        "answer": "Los Blancos"
+    },
+    {
+        "question": "Which team did Real Madrid defeat to win their 10th Champions League title (La Décima)?",
+        "options": [
+            "Barcelona",
+            "Atletico Madrid",
+            "Juventus",
+            "Bayern Munich"
+        ],
+        "answer": "Atletico Madrid"
+    },
+    {
+        "question": "Which famous player was nicknamed 'El Buitre'?",
+        "options": [
+            "Fernando Hierro",
+            "Hugo Sánchez",
+            "Raúl",
+            "Emilio Butragueño"
+        ],
+        "answer": "Emilio Butragueño"
+    }
+]
