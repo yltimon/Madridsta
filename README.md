@@ -36,7 +36,7 @@ Video files are accessed using relative paths, ensuring they're available for se
 
 ## Video Demo
 
-<video controls src="demo.mp4" title="Title"></video>
+Watch the video demo on `./demo.mp4`
 
 ## Installation and Setup Instructions
 1. Clone the Repository
