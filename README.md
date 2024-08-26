@@ -1,93 +1,83 @@
-# Discord HALAMADRID Bot Documentation
+# HALAMADRID Discord Bot
+
 ## Overview
-The Discord Football Bot is designed to enhance the experience of football fans on Discord by providing interactive commands that engage users with football-related content. This bot can send messages, share videos, and create a fun, themed environment for football enthusiasts.
-## Features
-1. `!uno` Command
 
-Description: Sends a sequence of Real Madrid's slogan followed by a  Vinicius jr video celebrating.
-<br>
-Messages Sent:
-<br>
-"dos"
-<br>
-"tres"
-<br>
-Video: Sends a video file named madrid.mp4 with a message "HALA MADRID"
-<br>
+HALAMADRID is a Discord bot tailored for football enthusiasts, offering engaging, football-themed commands to enhance user interaction. The bot sends messages, shares videos, and creates a lively environment for Real Madrid fans and general football lovers. It can celebrate iconic moments, motivate users, and add a fun, football-centric atmosphere to any Discord server.
 
-2. `!sui` Command
+## Why Use HALAMADRID Bot?
 
-Description: Sends a message and a different football-themed video.
-<br>
-Video: Sends a video file named sui.mp4 with a message "SUIIIIII"
-<br>
+1. Interactive Experience: The bot's commands deliver a unique, interactive experience with themed messages and videos, making conversations more exciting.
 
-3. `!vamos` Command
+2. `Football Focused: Specifically designed for football fans, it brings a shared passion for the sport into everyday chats, making it perfect for sports communities.
 
-Description: Sends a motivational football message followed by a video.
-<br>
-Video: Sends a video file named vamos.mp4 with a message "Vamos!"
-<br>
+3. Easy Integration: Simple to set up and use, HALAMADRID enhances any Discord server with minimal effort.
 
-4. `!calma` Command
-
-Description: Sends a football message followed by a video.
-<br>
-Video: Sends a video file named calma.mp4 with a message "CALMA!"
+4. Customization: While initially focused on Real Madrid, it can be adapted to include other football themes and commands.
 
 ## Problem it Solves
-The bot addresses the need for interactive and engaging football content within a Discord server. It provides a way for football fans to:
-
-1. Stay Engaged: By sending interesting messages and videos related to football.
-2. Celebrate Football Moments: Commands like !vamos and !sui celebrate moments in football with themed messages and media.
-3. Create a Themed Environment: The bot creates a fun atmosphere for football fans with specific commands and media content.
+The bot addresses the need for interactive football content on Discord servers, keeping football fans engaged, celebrating football moments, and creating a themed environment with specific commands and media.
 
 ## How it Works
 1. Bot Initialization
 
-The bot is initialized using the Serenity library for Discord interactions and the Tokio library for asynchronous operations.
-<br>
-It loads the Discord token from environment variables and sets up the necessary intents for receiving and sending messages.
-<br>
+The bot uses the Serenity library for Discord interactions and Tokio for asynchronous operations. It loads the Discord token from environment variables and sets up intents for messaging.
 
 2. Command Handling
 
-Commands are defined using Serenity's framework and are grouped under the General group.
-<br>
-Each command `(!uno, !sui, !vamos, !calma)` is handled by a specific function that sends a series of messages and, in some cases, a video file.
-<br>
-Commands use the send_message method to deliver messages and the add_file method to send video files.
-<br>
+Commands are defined using Serenity's framework and handled by specific functions that send messages and, in some cases, videos.
 
 3. Event Handling
 
-The bot logs messages and events such as the bot’s readiness and incoming messages to the console for debugging purposes.
+The bot logs readiness and incoming messages to the console for debugging.
 
 4. File Management
 
-Video files are specified with relative paths, and the bot ensures these files are accessible for sending within Discord channels.
+Video files are accessed using relative paths, ensuring they're available for sending within Discord channels.
 
-## Setting Up HALAMADRID Bot
-1. First clone the repository `https://github.com/yltimon/Madridsta`.Then run `cargo run`
-2. Add .env to the root of the folder. Add `DISCORD_TOKEN=`. Go to `https://discord.com/developers/applications` and generate a token which you paste it to the .env file.
-3. Invite the Bot to Your Server
+## Video Demo
+
+<video controls src="demo.mp4" title="Title"></video>
+
+## Installation and Setup Instructions
+1. Clone the Repository
+
+Run git clone `https://github.com/yltimon/Madridsta` then `cd Madrista`.
+
+2. Set Up Environment Variables
+
+Create a `.env` file in the root directory. Add `DISCORD_TOKEN=` followed by your Discord token.
+
+3. Build the Bot
+
+Ensure you have Rust installed on your system. Run the following command to build and start the bot `cargo run`
+
+4. Invite the Bot to Your Server
 
 * Go to the Discord Developer Portal and select your application.
-* Under the "OAuth2" tab, select "URL Generator."
-* Under "OAuth2 URL Generator," select the "bot" scope and give it appropriate permissions (e.g., "Send Messages").
-* Copy the generated URL and use it to invite the bot to your server.
+* Under the "OAuth2" tab, use the "OAuth2 URL Generator" to select the "bot" scope and assign permissions (e.g., "Send Messages").
+* Copy the generated URL and invite the bot to your server.
+* Paste the URL into your browser to invite the bot to your server.
 
-## Step by step Troubleshooting
+## Troubleshooting
 1. Verify Bot is online
-Check Discord Server: Make sure the bot is shown as "online" in your Discord server. If the bot is not online, it means that the bot is not connected correctly, which could be due to a token issue or network connectivity problems.
 
-2. Check the console to see if "Received !uno command from..." is printed. Assuming your used `uno` command
+Ensure the bot is shown as "online" in your Discord server.
 
-3. Enable Intents in Discord Developer Portal: Log in to the Discord Developer Portal, navigate to your bot application, go to the "Bot" tab, and ensure that both MESSAGE CONTENT INTENT and SERVER MEMBERS INTENT are enabled.
+2. Check Console Logs
 
-4. Check .env File: Ensure the .env file exists in the root of your project and contains the correct DISCORD_TOKEN.
+Confirm the bot logs, such as "Received !uno command from..."
 
-5. Role Permissions: Check that the bot's role in the Discord server has the necessary permissions (Read Messages, Manage Messages, Read Message History, etc.).
+3. Enable Intents
+
+Ensure MESSAGE CONTENT INTENT and SERVER MEMBERS INTENT are enabled in the Discord Developer Portal.
+
+4. Check `.env` File
+
+Verify the `.env` file exists with the correct `DISCORD_TOKEN`.
+
+5. Role Permissions
+
+Ensure the bot's role has necessary permissions in the Discord server.
 
 ## Use Commands
 `!uno`
@@ -98,12 +88,13 @@ Check Discord Server: Make sure the bot is shown as "online" in your Discord ser
 <br>
 `!calma`
 
-## Technical Details
+## Conclusion
+With ongoing updates and potential for customization, HALAMADRID is the go-to bot for enhancing your football community on Discord.
 
-- Language: Rust
-- Libraries: Serenity, Tokio
-- Environment: Requires the Discord token to be set in the environment variables.
 
-## Contribution
-Contributions are welcome! A football quiz commands is under-development. Coming out soon but not part of the monthly coding challenge submission.
+
+
+
+
+
 
