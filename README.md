@@ -5,9 +5,13 @@ The Discord Football Bot is designed to enhance the experience of football fans 
 1. `!uno` Command
 
 Description: Sends a sequence of Madrid theme followed by a  vincius video.
+<br>
 Messages Sent:
+<br>
 "dos"
+<br>
 "tres"
+<br>
 Video: Sends a video file named madrid.mp4 with a message "HALA MADRID"
 2. `!sui` Command
 
@@ -16,10 +20,12 @@ Video: Sends a video file named another_video.mp4 with a message "SUIIIIII"
 3. `!vamos` Command
 
 Description: Sends a motivational football message followed by a video.
+<br>
 Video: Sends a video file named vamos_video.mp4 with a message "Vamos!"
 4. `!calma` Command
 
 Description: Sends a football message followed by a video.
+<br>
 Video: Sends a video file named vamos_video.mp4 with a message "CALMA!"
 
 ## Problem it Solves
@@ -33,11 +39,14 @@ The bot addresses the need for interactive and engaging football content within 
 1. Bot Initialization
 
 The bot is initialized using the Serenity library for Discord interactions and the Tokio library for asynchronous operations.
+<br>
 It loads the Discord token from environment variables and sets up the necessary intents for receiving and sending messages.
 2. Command Handling
 
 Commands are defined using Serenity's framework and are grouped under the General group.
+<br>
 Each command (!uno, !sui, !vamos) is handled by a specific function that sends a series of messages and, in some cases, a video file.
+<br>
 Commands use the send_message method to deliver messages and the add_file method to send video files.
 3. Event Handling
 
@@ -51,8 +60,11 @@ Video files are specified with relative paths, and the bot ensures these files a
 2. Add .env to the root of the folder. Add `DISCORD_TOKEN=`. Go to `https://discord.com/developers/applications` and generate a token which you paste it to the .env file.
 3. Invite the Bot to Your Server
 Go to the Discord Developer Portal and select your application.
+<br>
 Under the "OAuth2" tab, select "URL Generator."
+<br>
 Under "OAuth2 URL Generator," select the "bot" scope and give it appropriate permissions (e.g., "Send Messages").
+<br>
 Copy the generated URL and use it to invite the bot to your server.
 
 ## Step by step Troubleshooting
@@ -69,14 +81,19 @@ Check Discord Server: Make sure the bot is shown as "online" in your Discord ser
 
 ## Use Commands
 `!uno`
+<br>
 `!sui`
+<br>
 `!vamos`
+<br>
 `!calma`
 
 ## Technical Details
-1. Language: Rust
-2. Libraries: Serenity, Tokio
-3. Environment: Requires the Discord token to be set in the environment variables.
+Language: Rust
+<br>
+Libraries: Serenity, Tokio
+<br>
+Environment: Requires the Discord token to be set in the environment variables.
 
 ## Contribution
 Contributions are welcome! A football quiz commands is under-development. Coming out soon but not part of the monthly coding challenge submission.
